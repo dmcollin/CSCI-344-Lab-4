@@ -33,16 +33,16 @@ t.stream(
             if(tweet.text.match(/awesome/)) {
                 client.incr('awesome');
             }
-            else if (tweet.text.match(/cool/)) {
+            if (tweet.text.match(/cool/)) {
                 client.incr('cool');
             }
-            else if (tweet.text.match(/rad/)) {
+            if (tweet.text.match(/rad/)) {
                 client.incr('rad');
             }
-            else if (tweet.text.match(/gnarly/)) {
+            if (tweet.text.match(/gnarly/)) {
                 client.incr('gnarly');
             }
-            else if (tweet.text.match(/groovy/)) {
+            if (tweet.text.match(/groovy/)) {
                 client.incr('groovy');
             }
         });
